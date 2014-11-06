@@ -10,12 +10,27 @@
 </head>
 <body ng-controller="ItemListCtrl">
 
-  <ul>
-    <li ng-repeat="item in items">
-      <span>{{item.name}}</span>
-      <p>{{item.snippet}}</p>
-    </li>
-  </ul>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+      Search: <input ng-model="query">
+
+    </div>
+    <div class="col-md-10">
+      <!--Body content-->
+
+      <ul class="items">
+        <li ng-repeat="item in items | filter:query">
+          {{item.name}}
+          <p>{{item.snippet}}</p>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
