@@ -24,8 +24,9 @@
 
 
       <ul class="items">
-        <li ng-repeat="item in items | filter:query | orderBy:orderProp">
-          <span>{{item.name}}</span>
+        <li ng-repeat="item in items | filter:query | orderBy:orderProp" class="thumbnail">
+          <a href="#/items/{{item.id}}" class="thumb"><img ng-src="{{item.imageUrl}}"></a>
+          <a href="#/items/{{item.id}}">{{item.name}}</a>
           <p>{{item.snippet}}</p>
         </li>
       </ul>
