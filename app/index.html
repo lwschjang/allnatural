@@ -23,10 +23,10 @@
       </select>
 
 
-      <ul class="phones">
-        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
-          <span>{{phone.name}}</span>
-          <p>{{phone.snippet}}</p>
+      <ul class="items">
+        <li ng-repeat="item in items | filter:query | orderBy:orderProp">
+          <span>{{item.name}}</span>
+          <p>{{item.snippet}}</p>
         </li>
       </ul>
 

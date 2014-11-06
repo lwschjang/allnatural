@@ -1,0 +1,51 @@
+[
+    {
+        "age": 0, 
+        "id": "windex", 
+        "imageUrl": "img/items/", 
+        "name": "Windex", 
+        "snippet": "Cleans windows"
+    }, 
+    {
+        "age": 1, 
+        "id": "mr-clean", 
+        "imageUrl": "img/items/", 
+        "name": "Mr. Clean", 
+        "snippet": "Cleans floors"
+    }, 
+    {
+        "age": 2, 
+        "id": "all-purpose-cleaner", 
+        "imageUrl": "img/items/", 
+        "name": "All-Purpose Cleaner", 
+        "snippet": "Cleans stuff"
+    }, 
+    {
+        "age": 3, 
+        "id": "product-1", 
+        "imageUrl": "img/items/", 
+        "name": "Product 1", 
+        "snippet": "Cleans stuff"
+    }, 
+    {
+        "age": 4, 
+        "id": "product-2", 
+        "imageUrl": "img/items/", 
+        "name": "Product 2", 
+        "snippet": "Cleans stuff"
+    }, 
+    {
+        "age": 5, 
+        "id": "product-3", 
+        "imageUrl": "img/items/", 
+        "name": "Product 3", 
+        "snippet": "Cleans stuff"
+    }, 
+    {
+        "age": 6, 
+        "id": "product-4", 
+        "imageUrl": "img/items/", 
+        "name": "Product 4", 
+        "snippet": "Cleans stuff"
+    } 
+]
