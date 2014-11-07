@@ -2,6 +2,7 @@
 
 var allNaturalApp = angular.module('allNaturalApp', [
 'ngRoute',
+'allNaturalAnimations',
 'allNaturalControllers', 
 'allNaturalServices'
 ]);
