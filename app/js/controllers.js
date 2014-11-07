@@ -9,7 +9,9 @@ allNaturalControllers.controller('ItemListCtrl', ['$scope', '$http',
     $scope.orderProp = 'age';
   }]);
 
-allNaturalControllers.controller('ItemDetailCtrl', ['$scope', '$routeParams',
-  function($scope, $routeParams) {
-    $scope.itemId = $routeParams.itemId;
+allNaturalControllers.controller('ItemDetailCtrl', ['$scope', '$routeParams', '$http',
+  function($scope, $routeParams, $http) {
+    $http.get('items/' + $routeParams.itemId + '.json').success(function(data) {
+      $scope.item = data;
+    });
   }]);

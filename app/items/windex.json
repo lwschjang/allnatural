@@ -1,0 +1,10 @@
+{
+    "description": "Cleans windows", 
+    "ingredients": "stuff, stuff, stuff, and more stuff", 
+    "alternatives": [
+        "something1",
+        "something2",
+        "something3"
+    ], 
+    "name": "Windex"
+}
