@@ -2,7 +2,8 @@
 
 var allNaturalApp = angular.module('allNaturalApp', [
 'ngRoute',
-'allNaturalControllers'
+'allNaturalControllers', 
+'allNaturalServices'
 ]);
 
 allNaturalApp.config(['$routeProvider',

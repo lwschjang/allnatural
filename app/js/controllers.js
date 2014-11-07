@@ -1,13 +1,9 @@
 var allNaturalControllers = angular.module('allNaturalControllers', []);
 
-allNaturalControllers.controller('ItemListCtrl', ['$scope', '$http',
-  function ($scope, $http) {
-    $http.get('items/items.json').success(function(data) {
-      $scope.items = data;
-    });
-
-    $scope.orderProp = 'age';
-  }]);
+allNaturalControllers.controller('ItemListCtrl', ['$scope', 'Item', function($scope, Item) {
+  $scope.items = Item.query();
+  $scope.orderProp = 'age';
+}]);
 
 allNaturalControllers.controller('ItemDetailCtrl', ['$scope', '$routeParams', '$http',
   function($scope, $routeParams, $http) {
