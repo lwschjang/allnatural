@@ -1,12 +1,22 @@
 'use strict';
 
-// Declare app level module which depends on views, and components
-angular.module('myApp', [
-  'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
-]).
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+var allNaturalApp = angular.module('allNaturalApp', [
+'ngRoute',
+'allNaturalControllers'
+]);
+
+allNaturalApp.config(['$routeProvider',
+  function($routeProvider) {
+    $routeProvider.
+      when('/items', {
+        templateUrl: 'partials/item-list.html',
+        controller: 'ItemListCtrl'
+      }).
+      when('/items/:itemId', {
+        templateUrl: 'partials/item-detail.html',
+        controller: 'ItemDetailCtrl'
+      }).
+      otherwise({
+        redirectTo: '/items'
+      });
+  }]);

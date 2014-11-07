@@ -6,34 +6,13 @@
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="js/app.js"></script>
   <script src="js/controllers.js"></script>
 </head>
-<body ng-controller="ItemListCtrl">
+<body>
 
-  <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-2">
-      <!--Sidebar content-->
-
-      Search: <input ng-model="query">
-      Sort by:
-      <select ng-model="orderProp">
-        <option value="name">Alphabetical</option>
-        <option value="age">Newest</option>
-      </select>
-
-
-      <ul class="items">
-        <li ng-repeat="item in items | filter:query | orderBy:orderProp" class="thumbnail">
-          <a href="#/items/{{item.id}}" class="thumb"><img ng-src="{{item.imageUrl}}"></a>
-          <a href="#/items/{{item.id}}">{{item.name}}</a>
-          <p>{{item.snippet}}</p>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-</div>
+  <div ng-view></div>
 
 </body>
 </html>
