@@ -1,27 +1,32 @@
-<div class="item-images">
-  <img ng-src="{{img}}"
-       class="item"
-       ng-repeat="img in item.images"
-       ng-class="{active: mainImageUrl==img}">
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="item-images">
+          <img ng-src="{{img}}"
+               class="item"
+               ng-repeat="img in item.images"
+               ng-class="{active: mainImageUrl==img}">
+        </div>
+      </div>
+      <div class="col-md-10">
+        <h1 class="page">{{item.name}}</h1>
+
+        <p>{{item.description}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="specs">
+          <li>
+            <span>Ingredients</span>
+            <dd>{{item.ingredients}}</dd>
+          </li>
+          <li>
+            <span>Alternatives</span>
+            <dd ng-repeat="alternatives in item.alternatives">{{alternatives}}</dd>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
 </div>
-
-<h1>{{item.name}}</h1>
-
-<p>{{item.description}}</p>
-
-<ul class="item-thumbs">
-  <li ng-repeat="img in item.images">
-    <img ng-src="{{img}}" ng-click="setImage(img)">
-  </li>
-</ul>
-
-<ul class="specs">
-  <li>
-    <span>Alternatives</span>
-    <dd ng-repeat="alternatives in item.alternatives">{{alternatives}}</dd>
-  </li>
-  <li>
-    <span>Ingredients</span>
-    <dd>{{item.ingredients}}</dd>
-  </li>
-</ul>

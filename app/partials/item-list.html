@@ -9,8 +9,9 @@
         <option value="name">Alphabetical</option>
         <option value="age">Newest</option>
       </select>
+      </div>
 
-
+      <div class="col-md-10">
       <ul class="items">
         <li ng-repeat="item in items | filter:query | orderBy:orderProp"
             class="thumbnail item-listing">

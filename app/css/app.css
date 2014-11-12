@@ -2,6 +2,9 @@ body {
   padding-top: 20px;
 }
 
+.page h1 {
+  color: #cf4a5c;
+}
 
 .item-images {
   background-color: white;
