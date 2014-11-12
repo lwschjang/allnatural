@@ -11,16 +11,12 @@
       <div class="col-md-10">
         <h1 class="page">{{item.name}}</h1>
 
-        <p>{{item.description}}</p>
+        <p ng-repeat="description in item.description">{{description}}</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <ul class="specs">
-          <li>
-            <span>Ingredients</span>
-            <dd>{{item.ingredients}}</dd>
-          </li>
           <li>
             <span>Alternatives</span>
             <dd ng-repeat="alternatives in item.alternatives">{{alternatives}}</dd>

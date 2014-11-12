@@ -1,10 +1,13 @@
 {
-    "description": "Cleans stuff", 
-    "ingredients": "stuff, stuff, stuff, and more stuff", 
+    "description": [
+        "Simple Green Concentrated All-Purpose Cleaner — This product is anything but green. It contains 2-butoxyethanol, a solvent that soaks through the skin and damages red blood cells; even more dangerous is that some people miss the fine print and don't dilute it.",
+        "Citra-Solv Cleaner & Degreaser — Orange may seem natural, but these sprays contain d-limonene, which can react with ozone in the air to form tiny harmful lung-penetrating particles and the known carcinogen formaldehyde.",
+        "Clorox, Fantastik, Febreze, Formula 409, Mr. Clean, and Spic and Span — EWG says many sprays sold under these brand names contain quaternary ammonium compounds or ethanolamine, compounds that can cause or trigger asthma."
+    ],  
     "alternatives": [
-        "something1",
-        "something2",
-        "something3"
+        "Mix 1/2 cup vinegar and 1/4 cup baking soda (or 2 teaspoons borax) into 1/2 gallon (2 liters) water. Store and keep.",
+        "Use Citrus-based natural all-purpose cleaner.",
+        "Use microfiber cloths"
     ], 
     "name": "All-Purpose Cleaner"
 }

@@ -1,24 +1,17 @@
 [
     {
         "age": 0, 
-        "id": "windex", 
+        "id": "floor-cleaners", 
         "imageUrl": "img/items/", 
-        "name": "Windex", 
-        "snippet": "Cleans windows"
+        "name": "Floor Cleaners", 
+        "snippet": "Bans on nonylphenol ethoxylate, an ingredient in some floor cleaners that is toxic to the environment and disrupts the hormonal system."
     }, 
     {
         "age": 1, 
-        "id": "mr-clean", 
-        "imageUrl": "img/items/", 
-        "name": "Mr. Clean", 
-        "snippet": "Cleans floors"
-    }, 
-    {
-        "age": 2, 
         "id": "all-purpose-cleaner", 
         "imageUrl": "img/items/", 
         "name": "All-Purpose Cleaner", 
-        "snippet": "Cleans stuff"
+        "snippet": "Many sprays contain quaternary ammonium compounds or ethanolamine, compounds that can cause or trigger asthma."
     }, 
     {
         "age": 3, 
